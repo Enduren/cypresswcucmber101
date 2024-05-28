@@ -1,6 +1,11 @@
 import{Given,When,Then} from 'cypress-cucumber-preprocessor/steps'
 
 
+beforeEach(function () {
+    cy.fixture('conduitLoginData.json').as('data')
+    
+})
+
 
 Given('User is on the login page',function () {
     cy.visit('https://react-redux.realworld.io/')
@@ -9,11 +14,12 @@ Given('User is on the login page',function () {
 })
 
 
-When('User login with valid credentials',function () {
-    cy.get('input[placeholder="Email"]').type('enter email')
-    cy.get('input[placeholder="Password"]').type('enterpassword')
-    cy.get('button[type="submit"]').click()
+When('User login with valid credentials',function (dataTable) {
     
+    cy.get('input[placeholder="Email"]').type(dataTable.rawTable[1][0])
+    cy.get('input[placeholder="Password"]').type(dataTable.rawTable[1][1])
+    cy.get('.btn').click()
+  
 })
 
 When('User click on the settings button',function () {
