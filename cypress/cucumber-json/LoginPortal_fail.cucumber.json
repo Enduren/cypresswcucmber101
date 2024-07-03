@@ -1,0 +1,62 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "failed login",
+    "line": 1,
+    "id": "failed-login",
+    "tags": [],
+    "uri": "LoginPortal_fail.feature",
+    "elements": [
+      {
+        "id": "failed-login;login-with-bad-credentials",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login with bad credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User goes to login page",
+            "result": {
+              "status": "passed",
+              "duration": 651000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User puts in wrong credentials",
+            "result": {
+              "status": "passed",
+              "duration": 523000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User Clicks Login",
+            "result": {
+              "status": "passed",
+              "duration": 229000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "a failed pop up should show up",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

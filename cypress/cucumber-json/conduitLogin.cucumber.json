@@ -22,7 +22,7 @@
             "name": "User is on the login page",
             "result": {
               "status": "passed",
-              "duration": 800000000
+              "duration": 882000000
             }
           },
           {
@@ -49,7 +49,7 @@
             "name": "User login with valid credentials",
             "result": {
               "status": "passed",
-              "duration": 829000000
+              "duration": 756000000
             }
           },
           {
@@ -59,7 +59,7 @@
             "name": "User click on the settings button",
             "result": {
               "status": "passed",
-              "duration": 459000000
+              "duration": 493000000
             }
           },
           {
@@ -69,7 +69,7 @@
             "name": "User click on the logout button",
             "result": {
               "status": "passed",
-              "duration": 85000000
+              "duration": 82000000
             }
           },
           {
@@ -79,7 +79,7 @@
             "name": "User should be routed back to login page",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 5000000
             }
           }
         ]
